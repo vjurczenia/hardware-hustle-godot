@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://chydvud73ucb8"]
+
+[ext_resource type="PackedScene" uid="uid://cm7nsd4lbstva" path="res://cell.tscn" id="1_11tp8"]
+
+[sub_resource type="GDScript" id="GDScript_q8w0i"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Column" type="Node2D"]
+script = SubResource("GDScript_q8w0i")
+
+[node name="Money" parent="." instance=ExtResource("1_11tp8")]
+
+[node name="Enclosure" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 31)
+
+[node name="Speaker" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 62)
+
+[node name="Controls" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 93)
+
+[node name="Processor" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 124)
+
+[node name="Amplifier" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 155)
+
+[node name="Noisebox" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 186)
+
+[node name="Synth" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 217)
+
+[node name="Opportunity" parent="." instance=ExtResource("1_11tp8")]
+position = Vector2(0, 248)

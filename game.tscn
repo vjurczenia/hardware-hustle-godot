@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjs3d5ayxwnyu"]
+
+[ext_resource type="PackedScene" uid="uid://4xtkqhbomxw4" path="res://row_labels.tscn" id="1_f0vqj"]
+[ext_resource type="PackedScene" uid="uid://dbsjujvrmqkgt" path="res://day.tscn" id="2_gcb6e"]
+[ext_resource type="PackedScene" uid="uid://b71fd0wn2bbmi" path="res://column_labels.tscn" id="2_t50ni"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Row Labels" parent="." instance=ExtResource("1_f0vqj")]
+position = Vector2(0, 32)
+
+[node name="Column Labels" parent="." instance=ExtResource("2_t50ni")]
+position = Vector2(104, 0)
+
+[node name="Day" parent="." instance=ExtResource("2_gcb6e")]
+position = Vector2(104, 32)

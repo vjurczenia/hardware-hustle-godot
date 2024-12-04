@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://4xtkqhbomxw4"]
+
+[node name="Row Labels" type="Node2D"]
+
+[node name="Money" type="Label" parent="."]
+offset_right = 100.0
+offset_bottom = 31.0
+text = "Money"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Enclosure" type="Label" parent="."]
+offset_top = 31.0
+offset_right = 100.0
+offset_bottom = 62.0
+text = "Enclosure
+"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Speaker" type="Label" parent="."]
+offset_top = 62.0
+offset_right = 100.0
+offset_bottom = 93.0
+text = "Speaker"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Controls" type="Label" parent="."]
+offset_top = 93.0
+offset_right = 100.0
+offset_bottom = 124.0
+text = "Controls"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Processor" type="Label" parent="."]
+offset_top = 124.0
+offset_right = 100.0
+offset_bottom = 155.0
+text = "Processor"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Amplifier" type="Label" parent="."]
+offset_top = 155.0
+offset_right = 100.0
+offset_bottom = 186.0
+text = "Amplifier"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Noisebox" type="Label" parent="."]
+offset_top = 186.0
+offset_right = 100.0
+offset_bottom = 217.0
+text = "Noisebox"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Synth" type="Label" parent="."]
+offset_top = 217.0
+offset_right = 100.0
+offset_bottom = 248.0
+text = "Synth"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Opportunity" type="Label" parent="."]
+offset_top = 248.0
+offset_right = 100.0
+offset_bottom = 279.0
+text = "Opportunity"
+horizontal_alignment = 2
+vertical_alignment = 1

@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbsjujvrmqkgt"]
+
+[ext_resource type="Script" path="res://day.gd" id="1_650qc"]
+[ext_resource type="PackedScene" uid="uid://chydvud73ucb8" path="res://column.tscn" id="1_p4bda"]
+
+[node name="Day" type="Node2D"]
+script = ExtResource("1_650qc")
+
+[node name="AM" parent="." instance=ExtResource("1_p4bda")]
+
+[node name="Buy" parent="." instance=ExtResource("1_p4bda")]
+position = Vector2(88, 0)
+
+[node name="Make" parent="." instance=ExtResource("1_p4bda")]
+position = Vector2(176, 0)
+
+[node name="Sell" parent="." instance=ExtResource("1_p4bda")]
+position = Vector2(264, 0)
+
+[node name="PM" parent="." instance=ExtResource("1_p4bda")]
+position = Vector2(352, 0)
+
+[node name="Advance Phase" type="Button" parent="."]
+offset_top = 320.0
+offset_right = 8.0
+offset_bottom = 328.0
+text = "Advance Phase"
+
+[node name="End Day" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 320.0
+offset_right = 200.0
+offset_bottom = 328.0
+text = "End Day"
+
+[connection signal="pressed" from="Advance Phase" to="." method="_on_advance_phase_pressed"]
+[connection signal="pressed" from="End Day" to="." method="_on_end_day_pressed"]
